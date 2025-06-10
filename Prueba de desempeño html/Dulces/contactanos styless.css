@@ -1,0 +1,104 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes the size include border and padding*/
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+}
+
+header{
+    display: flex;
+    width: 100%;
+   
+    background-color:#fa8ca9
+    
+}
+
+#logo {
+
+    width: 40%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#logo a {
+
+    grid-area: 1/4;
+    object-fit: contain;
+    
+}
+
+header nav {
+
+   display: flex;
+   width:60%;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   
+}
+
+.buttons-he {
+
+    border: none;
+    cursor: pointer; /*Makes the size include border and padding*/
+    background-color: #fa8ca9
+}
+
+#contact-us {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.B1, .B2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
+    flex-direction: column;
+}
+#message {
+   
+    height: 400px;
+
+}
+/* Inputs */
+.B1 input, .B2 input {
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+  
+}
+
+main p {
+
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+main h1 {
+
+    padding-top: 50px;
+}
+
+
+
+footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #968382;
+    color: white;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 14px;
+}

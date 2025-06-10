@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Hace que el tamaño incluya borde y relleno */
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+}
+
+header{
+    display: flex;
+    width: 100%;
+   
+    background-color:#fa8ca9
+    
+}
+
+#logo {
+
+    width: 40%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#logo a {
+
+    grid-area: 1/4;
+    object-fit: contain;
+    
+}
+
+header nav {
+
+   display: flex;
+   width:60%;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   
+}
+
+.buttons-he {
+
+    border: none;
+    cursor: pointer; 
+    background-color: #fa8ca9
+    
+}
+
+#paragraph-photos {
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+   
+    
+}
+
+#paragraph-photos img {
+
+    border-radius: 20px;
+}
+
+.paragraph-img  {
+
+    padding-top: 40px;
+    
+}
+
+.products-photos {
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+
+    
+
+}
+
+@media screen and (max-width: 720px) {
+
+
+    .products-photos {
+        grid-template-columns: 1fr 1fr;
+
+    }
+    
+}
+
+
+@media screen and (max-width: 450px) {
+
+
+    .products-photos {
+        grid-template-columns: 1fr ;
+
+    }
+    
+}
+
+
+.Photo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    flex-direction: column;
+    
+}
+
+.Photo img{
+
+    border-radius: 20px;
+}
+
+.Photo h1{
+
+    font-size:18px;
+}
+
+.Photo :hover {
+
+    transform: scale(1.1);
+}
+
+
+footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #968382;
+    color: white;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 14px;
+}
+

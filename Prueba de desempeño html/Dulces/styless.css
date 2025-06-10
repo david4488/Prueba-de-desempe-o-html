@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes the size include border and padding */
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+}
+
+/* header styles */
+header{
+    display: flex;
+    width: 100%;
+   
+    background-color:#fa8ca9
+    
+}
+
+#logo {
+
+    width: 40%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#logo a {
+
+    grid-area: 1/4;
+    object-fit: contain;
+    
+}
+
+header nav {
+
+   display: flex;
+   width:60%;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   
+}
+
+.buttons-he {
+
+    border: none;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    background-color: #fa8ca9
+    
+}
+
+.buttons-he :hover {
+     
+    color: white;
+    
+    
+
+   
+}
+
+#banner{ /* Apartado de baner --------------------------------------------------------------------------------------------------------------------*/
+
+    background-color: #fa8ca9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    
+    font-size: 30px;
+    
+
+    width: 100%;
+    padding: 20px;
+    height: 350px;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+
+
+
+}
+#banner button {
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+#sweets-banner{ 
+
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom,  #fa8ca9, white); /* Poner dos colores y degradarlos en un solo contenedor */
+
+   
+}
+
+@media screen and (max-width: 720px) {
+
+
+    #sweets-banner img {
+
+        width:100px;
+
+    }
+    
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+    #sweets-banner img {
+
+        width:50px;
+
+    }
+    
+}
+
+#paragraph {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 100%;
+   
+    gap: 40px;
+    
+
+}
+
+#paragraph h1, h2 {
+    color:#312b2b;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#text-Apartado {
+
+
+    padding-left:100px;
+    padding-right: 100px;
+    padding-top: 40px;
+}
+
+
+#paragraph h2 {
+
+    padding-top: 50px;
+}
+
+#paragraph-photos {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+    
+}
+
+#paragraph-photos img {
+
+    border-radius: 20px;
+    position: relative;
+
+    
+
+}
+
+.paragraph-img {
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 20px;
+    padding-bottom: 40px;
+
+}
+
+.paragraph-img :hover {
+
+    transform: scale(1.1);
+}
+
+
+
+
+#subscriptions {
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 30px;
+    background-color: #fa8ca9a9;
+    padding-bottom: 40px;
+    
+
+}
+
+#subscriptions h2 {
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+   
+
+
+}
+
+/* Contenedores flex para inputs */
+.B1, .B2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Inputs en boletín */
+.B1 input, .B2 input {
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+
+footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #968382;
+    color: white;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 14px;
+}
